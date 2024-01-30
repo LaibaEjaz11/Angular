@@ -1,0 +1,12 @@
+<p>template-reference-variable works!</p>
+<br><br>
+<input type="text" #nmaing name="myName" placeholder="Enter Your Name" /> <br><br>
+<input type="button" (click) = "getName(nameing.value)" value="Template Reference Variable"/>
+<!-- #nmaing is template reference variable-->
+<input type="text" #name placeholder="Enter Your Name" name="myName"/> <br><br>
+<input type="button" (click) = "displaynames(name.value)" value="Check Result on the page"/>
+<h2>{{displayname}}</h2>
+
+<!-- OnKeyUp -->
+<input type="text" (keyup)="keyupnames(keyupname.value)" #keyupname placeholder="Enter Your Name" name="myName"/> <br><br>
+<h2>{{boxname}}</h2>
